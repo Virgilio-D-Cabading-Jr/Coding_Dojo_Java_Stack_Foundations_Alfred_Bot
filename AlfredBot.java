@@ -32,6 +32,11 @@ public class AlfredBot {
         System.out.println("Guest Greeting: Mary Jane");
         System.out.println(testGuestGreeting);
         System.out.println("");
+
+        System.out.println("*****************************************************");
+        System.out.println("What is today's date and time?");
+        System.out.println(testDateAnnouncement);
+        System.out.println("");
         
         // Uncomment these one at a time as you implement each method.
         // System.out.println(testGuestGreeting);

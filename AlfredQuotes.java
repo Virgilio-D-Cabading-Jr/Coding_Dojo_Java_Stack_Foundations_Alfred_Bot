@@ -1,3 +1,5 @@
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;                                      // Java.util will be used in this class
 
 /** /////////////////////////////////////////////////////
@@ -18,8 +20,23 @@ public class AlfredQuotes {
         return greeting;
     }
     
+    //  //// Date Announcement ///////////////////////////
+    //  @returns: A polite announcement of the current date and time
     public String dateAnnouncement() {
-        return "place holder for date announcement return string";
+        Date currentDate = new Date();                                          // Get the Current Date
+        String greeting = "I do believe that the current day is ";
+
+        String pattern = "EEEEE, MMMMM dd, yyyy";                               // Format the Currrent Date to get the Day of Week, Month, Day, and Year
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        String currentDay = simpleDateFormat.format(currentDate);
+
+        pattern = "HH:mm:ss aa z";                                              // Format the Current Time to get Hour, Minute, Seconds, AM/PM, and Time Zone
+        simpleDateFormat = new SimpleDateFormat(pattern);
+        String currentTime = simpleDateFormat.format(currentDate);
+        
+        greeting += currentDay;                                                 // Add the formated day and time to the greeting output
+        greeting += " and the current time is " + currentTime;
+        return greeting;
     }
     
     public String respondBeforeAlexis(String conversation) {
