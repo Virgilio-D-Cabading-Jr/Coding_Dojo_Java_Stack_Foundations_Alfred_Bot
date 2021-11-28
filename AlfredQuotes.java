@@ -21,9 +21,39 @@ public class AlfredQuotes {
     }
 
     //  //// Guest Greeting //////////////////////////////
+    //      Overloaded version of Guest Greeting where there is a second param that is "morning", "afternoon", "evening"
     //  @ param: String name, String dayPeriod
     //  @returns: a greeting that includes the guest's name
     public String guestGreeting(String name, String dayPeriod) {
+        String greeting = "Good " + dayPeriod + ", Welcome to Wayne Manor " + name;
+        return greeting;
+    }
+
+    //  //// Guest Greeting //////////////////////////////
+    //      Overloaded version of Guest Greeting where there is a second param that is a date
+    //  @logic:
+    //          1. If current time is before noon
+    //                  it is the morning period
+    //          2. If current time is after noon but before 6pm
+    //                  it is the afternoon period
+    //          3. if current time is after 6pm
+    //                  it is the evening period
+    //  @param: String name, String dayPeriod
+    //  @returns: a greeting that includes the guest's name
+    public String guestGreeting(String name, Date date) 
+    {
+        String dayPeriod = "day";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH");
+        int currentHour = Integer.parseInt(simpleDateFormat.format(date));
+
+        if (currentHour < 12) {
+            dayPeriod = "morning";
+        } else if (currentHour < 18) {
+            dayPeriod = "afternoon";
+        } else {
+            dayPeriod = "evening";
+        }
+
         String greeting = "Good " + dayPeriod + ", Welcome to Wayne Manor " + name;
         return greeting;
     }

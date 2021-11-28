@@ -1,3 +1,5 @@
+import java.util.Date;
+
 //  ///////////////////////////////////////////////////////////////////
 //  ALFRED BOT MAIN CLASS
 //  By: Virgilio D. Cabading Jr.    Created at: November 28, 2021 0900
@@ -56,6 +58,11 @@ public class AlfredBot {
         System.out.println("*****************************************************");
         System.out.println("Guest Greeting: Val, afternoon");
         System.out.println( alfredBot.guestGreeting("Val", "afternoon") );
+        System.out.println("");
+
+        System.out.println("*****************************************************");
+        System.out.println("Guest Greeting: Val, Current Date");
+        System.out.println( alfredBot.guestGreeting("Val", new Date()) );
         System.out.println("");
         
         // Uncomment these one at a time as you implement each method.
