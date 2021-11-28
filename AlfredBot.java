@@ -19,6 +19,12 @@ public class AlfredBot {
         String notRelevantTest = alfredBot.respondBeforeAlexis("Maybe that's what Batman is about. Not winning. But failing.");
         
         // **** Print the Greetings **********************************
+        System.out.println("/////////////////////////////////////////////////////");
+        System.out.println("ALFRED BOT");
+        System.out.println("");
+
+        System.out.println("*****************************************************");
+        System.out.println("Basic Greeting:");
         System.out.println(testGreeting);
         
         // Uncomment these one at a time as you implement each method.

@@ -11,8 +11,11 @@ public class AlfredQuotes {
         return "Hello, lovely to see you. How are you?";
     }
     
+    //  //// Guest Greeting //////////////////////////////
+    //  @returns: a greeting that includes the guest's name
     public String guestGreeting(String name) {
-        return "place holder for guest greeting return string";
+        String greeting = "Welcome to Wayne Manor " + name;
+        return greeting;
     }
     
     public String dateAnnouncement() {
