@@ -52,6 +52,11 @@ public class AlfredBot {
         System.out.println("RespondBeforeAlexa: Maybe that's what Batman is about. Not winning. But failing.");
         System.out.println(notRelevantTest);
         System.out.println("");
+
+        System.out.println("*****************************************************");
+        System.out.println("Guest Greeting: Val, afternoon");
+        System.out.println( alfredBot.guestGreeting("Val", "afternoon") );
+        System.out.println("");
         
         // Uncomment these one at a time as you implement each method.
         // System.out.println(testGuestGreeting);

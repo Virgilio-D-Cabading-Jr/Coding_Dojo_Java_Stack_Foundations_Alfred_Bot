@@ -19,6 +19,14 @@ public class AlfredQuotes {
         String greeting = "Welcome to Wayne Manor " + name;
         return greeting;
     }
+
+    //  //// Guest Greeting //////////////////////////////
+    //  @ param: String name, String dayPeriod
+    //  @returns: a greeting that includes the guest's name
+    public String guestGreeting(String name, String dayPeriod) {
+        String greeting = "Good " + dayPeriod + ", Welcome to Wayne Manor " + name;
+        return greeting;
+    }
     
     //  //// Date Announcement ///////////////////////////
     //  @returns: A polite announcement of the current date and time
