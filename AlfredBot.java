@@ -42,6 +42,11 @@ public class AlfredBot {
         System.out.println("RespondBeforeAlexa: Alexa! Play some low-fi beats.");
         System.out.println(alexisTest);
         System.out.println("");
+
+        System.out.println("*****************************************************");
+        System.out.println("RespondBeforeAlexa: I can't find my yo-yo. Maybe Alfred will know where it is.");
+        System.out.println(alfredTest);
+        System.out.println("");
         
         // Uncomment these one at a time as you implement each method.
         // System.out.println(testGuestGreeting);
