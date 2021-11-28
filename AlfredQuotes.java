@@ -38,9 +38,28 @@ public class AlfredQuotes {
         greeting += " and the current time is " + currentTime;
         return greeting;
     }
-    
-    public String respondBeforeAlexis(String conversation) {
-        return "for snarky response return string";
+
+    //  //// Respond Before Alexa ///////////////////////////
+    //  Logic:
+    //      1. If "Alexa" is in conversation
+    //          return  "Right away. She certainly isn't sophisticated enough for that."
+    //      2. If "Alfred" is in conversation
+    //          return  "As you wish."
+    //      3. If neither name is found
+    //          return "Right. And with that I shall retire."
+    //  @return: String
+    public String respondBeforeAlexa(String conversation) {
+        conversation = conversation.toLowerCase();
+        boolean foundAlexa = conversation.indexOf("alexa") >= 0;
+        boolean foundAlfred = conversation.indexOf("alfred") >= 0;
+
+        if (foundAlexa) {
+            return "Right away. She certainly isn't sophisticated enough for that.";
+        } else if (foundAlfred) {
+            return "As you wish.";
+        } else {
+            return "Right. And with that I shall retire.";
+        }
     }
     
 	// NINJA BONUS

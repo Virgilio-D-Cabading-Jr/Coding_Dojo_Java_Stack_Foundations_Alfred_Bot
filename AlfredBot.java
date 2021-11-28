@@ -14,9 +14,9 @@ public class AlfredBot {
         String testGuestGreeting = alfredBot.guestGreeting("Mary Jane");
         String testDateAnnouncement = alfredBot.dateAnnouncement();
                                                                         // Test the Alfred Quotes RespondBeforeAlexis methods
-        String alexisTest = alfredBot.respondBeforeAlexis("Alexis! Play some low-fi beats.");
-        String alfredTest = alfredBot.respondBeforeAlexis("I can't find my yo-yo. Maybe Alfred will know where it is.");
-        String notRelevantTest = alfredBot.respondBeforeAlexis("Maybe that's what Batman is about. Not winning. But failing.");
+        String alexisTest = alfredBot.respondBeforeAlexa("Alexa! Play some low-fi beats.");
+        String alfredTest = alfredBot.respondBeforeAlexa("I can't find my yo-yo. Maybe Alfred will know where it is.");
+        String notRelevantTest = alfredBot.respondBeforeAlexa("Maybe that's what Batman is about. Not winning. But failing.");
         
         // **** Print the Greetings **********************************
         System.out.println("/////////////////////////////////////////////////////");
@@ -36,6 +36,11 @@ public class AlfredBot {
         System.out.println("*****************************************************");
         System.out.println("What is today's date and time?");
         System.out.println(testDateAnnouncement);
+        System.out.println("");
+
+        System.out.println("*****************************************************");
+        System.out.println("RespondBeforeAlexa: Alexa! Play some low-fi beats.");
+        System.out.println(alexisTest);
         System.out.println("");
         
         // Uncomment these one at a time as you implement each method.
