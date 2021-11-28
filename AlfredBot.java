@@ -11,7 +11,7 @@ public class AlfredBot {
         AlfredQuotes alfredBot = new AlfredQuotes();                    // New instance of AlfredQuotes
         
         String testGreeting = alfredBot.basicGreeting();                // Make strings out of Alfred Bot Greetings
-        String testGuestGreeting = alfredBot.guestGreeting("Beth Kane");
+        String testGuestGreeting = alfredBot.guestGreeting("Mary Jane");
         String testDateAnnouncement = alfredBot.dateAnnouncement();
                                                                         // Test the Alfred Quotes RespondBeforeAlexis methods
         String alexisTest = alfredBot.respondBeforeAlexis("Alexis! Play some low-fi beats.");
@@ -26,6 +26,12 @@ public class AlfredBot {
         System.out.println("*****************************************************");
         System.out.println("Basic Greeting:");
         System.out.println(testGreeting);
+        System.out.println("");
+
+        System.out.println("*****************************************************");
+        System.out.println("Guest Greeting: Mary Jane");
+        System.out.println(testGuestGreeting);
+        System.out.println("");
         
         // Uncomment these one at a time as you implement each method.
         // System.out.println(testGuestGreeting);
